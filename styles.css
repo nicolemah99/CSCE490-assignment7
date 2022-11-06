@@ -1,0 +1,5 @@
+.box {
+    border:1px solid lightsalmon;
+    background-color: aliceblue;
+    min-height: 50px;
+}
