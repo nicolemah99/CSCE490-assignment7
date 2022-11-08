@@ -6,10 +6,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Gallery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
+<style>
+    .carousel-item {
+        height: 32rem;
+        position: relative;
+    }
+
+    .oranges {
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-caption{
+        color: white;
+        background-color:rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .card-header {
+        background-color:rgba(252, 107, 3, 0.8);
+        color: white;
+    }
+</style>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light" style="background-color:#ffc163">
@@ -40,14 +65,119 @@
         </div>
     </nav>
     <main>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://s2.r29static.com/bin/entry/3b8/x,80/1951722/image.jpg" alt="" class="oranges">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Want to eat an Orange?</h1>
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-light" href="shop.html">Buy Now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="oranges"
+                        src="https://www.allrecipes.com/thmb/BojuKMVdjpW_IOZLocmpjwz6h_A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-948712040-2000-1d7cecde511a4c1aab0f4fe6498c25f6.jpg"
+                        alt="">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>So many different types.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-light" href="alerts.html">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="oranges"
+                        src="https://publish.purewow.net/wp-content/uploads/sites/2/2021/02/types-of-oranges-cat.jpg"
+                        alt="">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Health.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-dark" href="index.html">Nutrients</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <div class="container">
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Nothing Included</li>
+                    <li>No Oranges</li>
+                    <li>No Photos of Oranges</li>
+                    <li>No Eating Oranges</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-primary">Don't Sign Up</button>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">I like Oranges</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>2 Oranges</li>
+                    <li>5 Orange Slices</li>
+                    <li>20 Photos of Oranges</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-primary">You Might Like This</button>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Orange Connoisseur</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$25 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 Oranges</li>
+                    <li>50 Orange Slices</li>
+                    <li>Unlimited Photos of Oranges</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-primary">Best Option</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
 
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <script src="shop.js"></script>
 </body>
+
 
 </html>
