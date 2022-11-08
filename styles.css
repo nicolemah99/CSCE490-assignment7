@@ -4,6 +4,7 @@
     min-height: 50px;
 }
 
-.button {
-    background-color: ffc163;
+h2,h1{
+    text-align: center;
+    color: black;
 }
